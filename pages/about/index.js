@@ -25,18 +25,22 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key="html" />,
+          <FaCss3 key="css" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <SiNextdotjs key="next" />,
+          <SiFramer key="framer" />,
+          <FaWordpress key="wordpress" />,
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          <FaFigma key="figma" />,
+          <SiAdobexd key="xd" />,
+          <SiAdobephotoshop key="photoshop" />,
+        ],
       },
     ],
   },
@@ -136,7 +140,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began as a developer. Since then, I've done remote
+            10 years ago, I began as a developer. Since then, I&apos;ve done remote
             work for agencies, counsulted for strartups, and collaborated on
             digital products for business and consumer use.
           </motion.p>
